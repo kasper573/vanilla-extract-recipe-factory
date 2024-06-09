@@ -1,0 +1,38 @@
+{
+  "name": "vanilla-extract-recipe-factory",
+  "version": "0.0.8",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kasper573/vanilla-extract-recipe-factory.git"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "figma-to-typescript": "dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --clean --dts --format cjs --out-dir dist",
+    "dev": "pnpm build --watch",
+    "start": "node dist/index.js",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@eslint/js": "^8",
+    "eslint": "^8",
+    "prettier": "^3",
+    "typescript": "^5",
+    "typescript-eslint": "^7",
+    "tsup": "^8"
+  },
+  "peerDependencies": {
+    "@vanilla-extract/recipes": "^0.5",
+    "@vanilla-extract/css": "^1.15"
+  }
+}
