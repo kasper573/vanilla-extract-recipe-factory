@@ -4,8 +4,6 @@ Create your own [recipe function](https://vanilla-extract.style/documentation/pa
 
 [Try it on StackBlitz](https://stackblitz.com/edit/vanilla-extract-recipe-factory)
 
-> Heads up: This package does not follow semantic versioning. Changes of all types are released to the patch portion of the version string.
-
 ```ts
 // design-tokens.ts
 import { createRecipeFactory } from "vanilla-extract-recipe-factory";
