@@ -13,7 +13,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsup src/index.ts --clean --dts --format cjs --out-dir dist",
+    "build": "tsup src/index.ts --clean --dts --format esm,cjs --out-dir dist",
     "dev": "pnpm build --watch",
     "format": "prettier --write .",
     "prepublishOnly": "npm run build"
